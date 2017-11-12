@@ -1,6 +1,7 @@
-# Spring Boot User Micro Services using JPA
+# Spring Boot Admin Server with UI
 
-Simple implementation of Micro Services to manage Users using Spring Boot
+It's a Spring Boot Admin Server with UI to view the metrics of Spring Boot Apps. 
+It runs on port 8009 and the application register with the url spring.boot.admin.url= http://localhost:8009
 
 ## Build
 
@@ -11,12 +12,8 @@ Simple implementation of Micro Services to manage Users using Spring Boot
 
 > `mvn spring-boot:run` - command to run the app
 
-## Run the Swagger API
+## View the Spring Admin UI App
 
-http://localhost:8080/swagger-ui.html
-
-## Steps to create a user
-
-``` curl -X POST  http://localhost:8080//api/user  -H 'accept: application/json'  -H 'cache-control: no-cache'  -H 'content-type: application/json'  -H 'postman-token: e07adf15-dabb-3384-0092-4dc926974b34'  -d '{ "user_name": "Bret", "email" : "Sincere@april.biz", "password": "welcome@123", "first_name": "Leanne", "last_name": "Graham", "middle_name": "N", "addresses": [ { "line1": "Kulas Light", "line2": "Apt. 556", "city": "Gwenborough", "zip": "92998-3874", "country": "US", "type": "HOME" } ] }'  ```
+http://localhost:8009/
 
 
